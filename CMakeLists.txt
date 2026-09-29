@@ -9,8 +9,8 @@ set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 add_library(socket STATIC)
-add_subdirectory(../string ${CMAKE_BINARY_DIR}/string_from_socket)
-add_subdirectory(../threading ${CMAKE_BINARY_DIR}/threading_from_socket)
+add_subdirectory(../string ${CMAKE_BINARY_DIR}/libs_build/string_from_socket)
+add_subdirectory(../threading ${CMAKE_BINARY_DIR}/libs_build/threading_from_socket)
 
 target_sources(socket PRIVATE
 	socket.c
